@@ -18,8 +18,5 @@ enh = ImageEnhance.Contrast(im)
 im = enh.enhance(10)
 im.show()
 
-# zoom in
-
-
 # save the image with Image.save(outfile)
 im.save(my_path + "images/smilelaugh_enhanced.jpg")
