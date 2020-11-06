@@ -12,11 +12,11 @@
 
 #### 1. Import the relevant library and modules:
 
-import os, sys
-
 from PIL import Image, ImageEnhance
 
-##### 1b. (Optional) Set the path for the working directory
+#### 1b. (Optional) Set the path for the working directory
+
+import os, sys
 
 my_path = os.path.dirname(__file__)
   
@@ -24,7 +24,7 @@ my_path = os.path.dirname(__file__)
 
 im = Image.open(my_path + "images/left_facing_dog.png")
 
-im.show() # show the initial image
+im.show()
   
 ![left_facing_dog.png](/images/left_facing_dog.png)
   
@@ -32,7 +32,7 @@ im.show() # show the initial image
 
 im = im.rotate(45)
 
-im.show() # show the rotated image
+im.show()
 
 ![dog_rotated.PNG](/images/dog_rotated.PNG)
 
@@ -40,7 +40,7 @@ im.show() # show the rotated image
 
 im = im.transpose(Image.FLIP_TOP_BOTTOM)
 
-im.show() # show the flipped image
+im.show()
 
 ![dog_modified.png](/images/dog_modified.png)
 
